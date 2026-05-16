@@ -10,7 +10,7 @@ Contact section
 HTML
 CSS
 🔹 Live Website
-https://divyagulabnarwade.github.io/FUTURE_FS_01/
+https://nikhithvirat888.github.io/FUTURE_FS_01/
 
 🔹 Author
 Nikhith
