@@ -1,0 +1,183 @@
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+/* NAVBAR BASE */
+/* NAVBAR BASE */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+/* underline */
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: #ffcc70;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* glow */
+nav a:hover {
+    color: #ffcc70;
+    text-shadow: 0 0 8px rgba(255, 204, 112, 0.8);
+}
+
+/* ✨ GLOW EFFECT */
+nav a:hover {
+    color: #ffcc70;
+    text-shadow: 0 0 8px rgba(255, 204, 112, 0.8);
+}
+/* Container */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Hero */
+.profile {
+    border-radius: 50%;
+    width: 120px;
+    margin-top: 20px;
+}
+
+.hero h1 {
+    margin: 10px 0;
+}
+
+/* Typing effect */
+.typing {
+    border-right: 2px solid white;
+    display: inline-block;
+    padding-right: 5px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* Sections */
+section {
+    margin-top: 40px;
+}
+
+/* Skills */
+.skills span {
+    display: inline-block;
+    background: rgba(255,255,255,0.3);
+    padding: 8px 14px;
+    margin: 6px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.skills span:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Cards */
+.card {
+    background: rgba(255,255,255,0.2);
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    margin: 5px;
+    border-radius: 20px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ffcc70;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+    margin-top: 40px;
+}
+a {
+    color: #ffcc70;
+    font-weight: bold;
+}
+
+a:hover {
+    color: white;
+}
+/* Fade Animation */
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+/* When visible */
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
